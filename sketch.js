@@ -7,7 +7,8 @@
  */
 
 // POSITION VARIABLES
-var pos = 25;
+var posX = 0;
+var posY = 0;
 var sizeScale = 1;
 var minSacale = 0.2;
 var maxScale = 3.5;
@@ -58,7 +59,8 @@ function draw() {
  */
 
 function initialize() {
-  backgroundColor = color(255, 204, 0);
+  //backgroundColor = color(255, 204, 0);
+  backgroundColor = color(255);
 
 
 }
@@ -80,7 +82,7 @@ function windowResized() {
 function initializeItems() {
 
   for (var i = 0; i < 1; i++) {
-    items.push(new Item(150, 150, 150, 150, sizeScale, pos,
+    items.push(new Item(150, 150, 150, 150, sizeScale, posX,posY,
       itemsJSON.data[i].name,
       itemsJSON.data[i].projectName,
       itemsJSON.data[i].year,
@@ -101,7 +103,7 @@ function drawItems() {
   background(backgroundColor);
 
   for (var i = 0; i < items.length; i++) {
-    items[i].update(sizeScale, pos);
+    items[i].update(sizeScale, posX,posY);
     items[i].draw();
 
     // print(items[i].name);
@@ -153,16 +155,19 @@ function mouseWheel(event) {
   }
 
 
-
   return false;
 }
 
 
 function mousePressed() {
   //window.open("https://www.w3schools.com");
-
+  for (var i = 0; i < items.length; i++) {
+    items[i].clicked();
+    // print(items[i].name);
+  }
 
 }
+
 
 function mouseReleased() {
   //window.open("https://www.w3schools.com");
@@ -170,11 +175,21 @@ function mouseReleased() {
 
 }
 
+function mouseMoved() {
+  //window.open("https://www.w3schools.com");
+  for (var i = 0; i < items.length; i++) {
+    items[i].over();
+    // print(items[i].name);
+  }
+
+}
+
 function mouseDragged() {
 
   //print("PREV:" + pmouseX);
   //print("CURR:" + mouseX);
-  pos += (mouseX - pmouseX);
+  posX += (mouseX - pmouseX);
+  posY += (mouseY - pmouseY);
   //print("DELTA:" + (pmouseX - mouseX));
 
   // prevent default
