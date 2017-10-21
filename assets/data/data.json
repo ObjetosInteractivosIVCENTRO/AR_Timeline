@@ -2,7 +2,7 @@
   {
     "name": "Platon",
     "projectName": "Mito de la caverna",
-    "year": "380AC",
+    "year": -380,
     "link": "https://www.youtube.com/watch?v=1RWOpQXTltA",
     "tag": "EXAMPLES"
   },
@@ -392,7 +392,7 @@
     "tag": "EXAMPLES"
   },
   {
-    "name": "W Magazine",
+    "name": "W magazine",
     "projectName": "Magazines AR",
     "year": 2017,
     "link": "https://www.youtube.com/watch?v=w-64KaymuD8",

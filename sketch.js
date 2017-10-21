@@ -10,7 +10,7 @@
 var posX = 0;
 var posY = 0;
 var sizeScale = 1;
-var minSacale = 0.2;
+var minSacale = 0.05;
 var maxScale = 3.5;
 var backgroundColor;
 // JSON VARIABLES
@@ -61,7 +61,7 @@ function draw() {
 function initialize() {
   //backgroundColor = color(255, 204, 0);
   backgroundColor = color(255);
-
+  sizeScale = 1.0;
 
 }
 
@@ -81,8 +81,10 @@ function windowResized() {
 
 function initializeItems() {
 
-  for (var i = 0; i < 1; i++) {
-    items.push(new Item(150, 150, 150, 150, sizeScale, posX,posY,
+  for (var i = 0; i < 5; i++) {
+    var positionX = map(int(itemsJSON.data[i].year), -400, 2020, 0, 2020*3);
+    
+    items.push(new Item(300*i, 150, 150, 150, sizeScale, posX,posY,
       itemsJSON.data[i].name,
       itemsJSON.data[i].projectName,
       itemsJSON.data[i].year,
@@ -191,6 +193,7 @@ function mouseDragged() {
 
   //print("PREV:" + pmouseX);
   //print("CURR:" + mouseX);
+  //posX += (mouseX - pmouseX)*(1/sizeScale);
   posX += (mouseX - pmouseX);
   posY += (mouseY - pmouseY);
   //print("DELTA:" + (pmouseX - mouseX));

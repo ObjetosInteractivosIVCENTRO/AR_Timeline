@@ -16,11 +16,15 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
   this.textColor;
   this.isClicked;
   this.isOver;
+  this.originalPosition;
+  this.currentX;
+  this.currentY;
 
+  this.textColor = color(255, 255, 255);
+  this.isClicked = false;
+  this.isOver = false;
 
-  textColor = color(255, 255, 255);
-  isClicked = false;
-  isOver = false;
+  this.originalPosition = this.x;
 
   if (this.tag == "EXAMPLES") {
     this.fillColor = color(0, 0, 0);
@@ -38,24 +42,27 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
   }
 
   this.draw = function() {
+    this.currentX = (this.x + this.deltaX)*this.sizeScale;
+    this.currentY = (this.y + this.deltaY);
+
     noStroke();
     fill(this.fillColor);
     //rect(this.x + this.deltaX, this.y+this.deltaY, this.w * this.sizeScale, this.h * this.sizeScale);
-    ellipse(this.x + this.deltaX, this.y + this.deltaY, this.w * this.sizeScale, this.h * this.sizeScale);
+    ellipse(this.currentX, this.currentY, this.w * this.sizeScale, this.h * this.sizeScale);
     fill(255);
     //ellipse(this.x + this.deltaX, this.y, this.w * this.sizeScale*0.9, this.h * this.sizeScale*0.9);
     //fill(this.fillColor);
     textAlign(CENTER, CENTER);
     textSize(this.w * this.sizeScale / 4);
-    text(String(this.yr), this.x + this.deltaX, this.y + this.deltaY);
+    text(String(this.yr), this.currentX, this.currentY);
 
-    if (isOver) {
+    if (this.isOver) {
       fill(this.fillColor);
-      rect(this.x + this.deltaX, this.y + this.deltaY - this.w * this.sizeScale, this.w/10 * this.sizeScale, this.h * this.sizeScale);
+      rect(this.currentX, this.currentY - this.w * this.sizeScale, this.w / 10 * this.sizeScale, this.h * this.sizeScale);
       textSize(this.w * this.sizeScale / 3);
-      text(String(this.name), this.x + this.deltaX, this.y + this.deltaY - this.w * this.sizeScale);
+      text(String(this.name), this.currentX, this.currentY - this.w * this.sizeScale);
       textSize(this.w * this.sizeScale / 6);
-      text(String(this.projectName), this.x + this.deltaX, this.y + this.deltaY - this.w * this.sizeScale);
+      text(String(this.projectName), this.currentX, this.currentY - this.w * this.sizeScale);
     }
 
 
@@ -73,7 +80,7 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
   this.clicked = function() {
     isClicked = false;
-    var d = dist(mouseX, mouseY, this.x + this.deltaX, this.y + this.deltaY);
+    var d = dist(mouseX, mouseY, this.currentX, this.currentY);
     if (d < this.w * this.sizeScale / 2) {
       isClicked = true;
       //window.open(String(this.link));
@@ -83,10 +90,10 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
 
   }
-  
+
   this.released = function() {
     isClicked = false;
-    var d = dist(mouseX, mouseY, this.x + this.deltaX, this.y + this.deltaY);
+    var d = dist(mouseX, mouseY, this.currentX, this.currentY);
     if (d < this.w * this.sizeScale / 2) {
       isClicked = true;
       window.open(String(this.link));
@@ -96,14 +103,18 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
 
   }
-  
+
 
   this.over = function() {
-    isOver = false;
-    var d = dist(mouseX, mouseY, this.x + this.deltaX, this.y + this.deltaY);
+
+    var d = dist(mouseX, mouseY, this.currentX, this.currentY);
     if (d < this.w * this.sizeScale / 2) {
-      isOver = true;
+      this.isOver = true;
       //this.fillColor = color(255, 0, 200);
+    } else {
+
+      this.isOver = false;
+      //this.fillColor = color(0, 0, 0);
     }
 
 
