@@ -76,6 +76,19 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
     var d = dist(mouseX, mouseY, this.x + this.deltaX, this.y + this.deltaY);
     if (d < this.w * this.sizeScale / 2) {
       isClicked = true;
+      //window.open(String(this.link));
+      //this.fillColor = color(255, 0, 200);
+    }
+
+
+
+  }
+  
+  this.released = function() {
+    isClicked = false;
+    var d = dist(mouseX, mouseY, this.x + this.deltaX, this.y + this.deltaY);
+    if (d < this.w * this.sizeScale / 2) {
+      isClicked = true;
       window.open(String(this.link));
       //this.fillColor = color(255, 0, 200);
     }
@@ -83,6 +96,7 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
 
   }
+  
 
   this.over = function() {
     isOver = false;

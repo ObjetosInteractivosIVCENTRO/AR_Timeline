@@ -171,7 +171,10 @@ function mousePressed() {
 
 function mouseReleased() {
   //window.open("https://www.w3schools.com");
-
+  for (var i = 0; i < items.length; i++) {
+    items[i].released();
+ 
+  }
 
 }
 
