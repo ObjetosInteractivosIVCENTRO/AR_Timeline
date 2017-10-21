@@ -1,0 +1,401 @@
+{ "data":[
+  {
+    "name": "Platon",
+    "projectName": "Mito de la caverna",
+    "year": "380AC",
+    "link": "https://www.youtube.com/results?sp=UBQ%253D&search_query=pepper%27s+ghost+technique",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "John Henry Pepper",
+    "projectName": "Pepper's ghost",
+    "year": 1862,
+    "link": "https://www.youtube.com/results?sp=UBQ%253D&search_query=pepper%27s+ghost+technique",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "George Stratton",
+    "projectName": "Distorting Eyewear",
+    "year": 1890,
+    "link": "https://www.youtube.com/watch?v=-kohUpQwZt8",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "L. Frank Baum",
+    "projectName": "The Master Key",
+    "year": 1901,
+    "link": "http://www.historyofinformation.com/expanded.php?id=4698",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "ARMY",
+    "projectName": "Bucaneer HUD",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=brXKFgPct68",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Ivan Sutherland",
+    "projectName": "The Sword of Damocles",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=NtwZXGprxag",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Start Treck",
+    "projectName": "Holodeck",
+    "year": 1985,
+    "link": "https://www.youtube.com/watch?v=d7dfsLfWJvc",
+    "tag": "MOVIES"
+  },
+  {
+    "name": "Tom Claudell",
+    "projectName": "Boeing",
+    "year": 1990,
+    "link": "https://www.youtube.com/watch?v=NPOJixEeCmg",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Myron Krueguer",
+    "projectName": "The videoplace",
+    "year": 1990,
+    "link": "https://www.youtube.com/watch?v=YyIWzapmOLI",
+    "tag": "ART"
+  },
+  {
+    "name": "Paul Milgram & Fumio Kishino",
+    "projectName": "Mixed reality",
+    "year": 1994,
+    "link": "https://www.researchgate.net/publication/231514051_A_Taxonomy_of_Mixed_Reality_Visual_Displays",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Junichu Rekimoto",
+    "projectName": "Navicam",
+    "year": 1994,
+    "link": "https://www.youtube.com/watch?v=S6XKPEexRbU",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Junichu Rekimoto",
+    "projectName": "Trans-vision",
+    "year": 1996,
+    "link": "https://vimeo.com/9971977",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Columbia University",
+    "projectName": "MARS",
+    "year": 1996,
+    "link": "http://graphics.cs.columbia.edu//projects/mars/",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "ESPN",
+    "projectName": "Yellow Line NFL",
+    "year": 1998,
+    "link": "https://www.youtube.com/watch?v=P0Z7D-Eahd4",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Wayne Piekarski",
+    "projectName": "TINMITH",
+    "year": 1998,
+    "link": "http://www.tinmith.ne",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Hirokazu Kato",
+    "projectName": "ARToolKit",
+    "year": 1999,
+    "link": "https://artoolkit.org/",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Wayne Piekarski",
+    "projectName": "AR QUAKE",
+    "year": 2002,
+    "link": "https://www.youtube.com/watch?v=No7QF0MwSjg",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Golan Levin",
+    "projectName": "Manual Input Sessions",
+    "year": 2004,
+    "link": "https://www.youtube.com/watch?v=3paLKLZbRY4",
+    "tag": "ART"
+  },
+  {
+    "name": "Zack Lieberman",
+    "projectName": "Drawn",
+    "year": 2005,
+    "link": "https://www.youtube.com/watch?v=rHTttiliLz8",
+    "tag": "ART"
+  },
+  {
+    "name": "Lifeplus",
+    "projectName": "Lifeplus",
+    "year": 2007,
+    "link": "https://www.youtube.com/watch?v=DY26p9paxSY",
+    "tag": "EDUCATION"
+  },
+  {
+    "name": "Chris Sugrue",
+    "projectName": "Delicate Boundaries",
+    "year": 2007,
+    "link": "https://www.youtube.com/watch?v=gO3ohFG_YoI",
+    "tag": "ART"
+  },
+  {
+    "name": "Saqoosha",
+    "projectName": "FLARToolKit",
+    "year": 2009,
+    "link": "https://www.youtube.com/watch?v=-C_G7_cb2Wk",
+    "tag": "SCIENCE"
+  },
+  {
+    "name": "Hugo Boss",
+    "projectName": "Hugo Boss Store",
+    "year": 2009,
+    "link": "https://www.youtube.com/watch?v=4q4Aew-zx3w",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "GE",
+    "projectName": "GE Helios",
+    "year": 2009,
+    "link": "https://www.youtube.com/watch?v=wVcdurnfcPo",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Clasroom",
+    "projectName": "Clasroom",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=ukrDPyPPYnE",
+    "tag": "EDUCATION"
+  },
+  {
+    "name": "Star Char",
+    "projectName": "Star Char",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=2KyWeJi86jo",
+    "tag": "EDUCATION"
+  },
+  {
+    "name": "MoMA",
+    "projectName": "Uninvited Augmented Reality",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=b9T2LVM7ynM",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "projectName": "Iron Man 2",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=nPcb05I0a",
+    "tag": "MOVIES"
+  },
+  {
+    "name": "Adidas",
+    "projectName": "Adidas originals",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=cN_S8QgFsFQ",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Hatsune Miko",
+    "projectName": "Hatsune Miko",
+    "year": 2010,
+    "link": "https://www.youtube.com/watch?v=VVzgsX9lmww",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Random Interactive",
+    "projectName": "Comex",
+    "year": 2010,
+    "link": "https://vimeo.com/23987119",
+    "tag": "MEXICO"
+  },
+  {
+    "name": "Random Interactive",
+    "projectName": "Pyramid Hologram",
+    "year": 2011,
+    "link": "https://vimeo.com/24581851",
+    "tag": "MEXICO"
+  },
+  {
+    "name": "AXE",
+    "projectName": "AXE",
+    "year": 2011,
+    "link": "https://www.youtube.com/watch?v=I4tvqalREho",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Immaterials",
+    "projectName": "Immaterials",
+    "year": 2011,
+    "link": "https://vimeo.com/20412632",
+    "tag": "ART"
+  },
+  {
+    "name": "Sander Veenhof",
+    "projectName": "Storylines",
+    "year": 2011,
+    "link": "http://sndrv.nl/storylines/",
+    "tag": "ART"
+  },
+  {
+    "name": "Golan Levin",
+    "projectName": "Messa di Voce",
+    "year": 2011,
+    "link": "https://vimeo.com/25037133",
+    "tag": "ART"
+  },
+  {
+    "name": "Random Interactive",
+    "projectName": "Kybela",
+    "year": 2011,
+    "link": "https://www.youtube.com/watch?v=XAq--E27diA",
+    "tag": "MEXICO"
+  },
+  {
+    "name": "Coachella",
+    "projectName": "Tupac Hologram",
+    "year": 2012,
+    "link": "https://www.youtube.com/watch?v=TGbrFmPBV0Y",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Play Station",
+    "projectName": "Book os Spells",
+    "year": 2012,
+    "link": "https://www.youtube.com/watch?v=0JFDVVrqphI",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Magazines AR",
+    "projectName": "Magazines AR",
+    "year": 2012,
+    "link": "https://www.youtube.com/watch?v=wp2z36kKn0s",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Magazines AR",
+    "projectName": "Magazines AR",
+    "year": 2012,
+    "link": "https://www.youtube.com/watch?v=wKwLBWCKs94",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Spike Jonze",
+    "projectName": "Her",
+    "year": 2013,
+    "link": "https://www.youtube.com/watch?v=XAqedT9mukY",
+    "tag": "MOVIES"
+  },
+  {
+    "name": "Volkswagen",
+    "projectName": "MARTA APP",
+    "year": 2013,
+    "link": "https://www.youtube.com/watch?v=H7RzyjNJH6c",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Flock",
+    "projectName": "Daniela Velasco",
+    "year": 2013,
+    "link": "https://plus.google.com/108988267104186229365",
+    "tag": "MEXICO"
+  },
+  {
+    "name": "Operating Rooms",
+    "projectName": "Operating Rooms",
+    "year": 2013,
+    "link": "https://www.youtube.com/watch?v=w-QoDqBMe2k",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Google",
+    "projectName": "Google Glass",
+    "year": 2014,
+    "link": "https://www.youtube.com/watch?v=ErpNpR3XYUw",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "IKEA",
+    "projectName": "IKEA",
+    "year": 2014,
+    "link": "https://www.youtube.com/watch?v=xC6t2eEPkPc",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Magazines AR",
+    "projectName": "Magazines AR",
+    "year": 2015,
+    "link": "https://vimeo.com/120072393",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "MINI",
+    "projectName": "MINI HeadUpDisplay",
+    "year": 2015,
+    "link": "https://www.youtube.com/watch?v=VadVcZ1wlJ8",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Modiface",
+    "projectName": "Modiface",
+    "year": 2015,
+    "link": "https://www.youtube.com/watch?v=ZAv2sunQKCc",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Architecture of Radio",
+    "projectName": "Radio Waves",
+    "year": 2015,
+    "link": "http://www.architectureofradio.com",
+    "tag": "ART"
+  },
+  {
+    "name": "Keiichi Matsuda",
+    "projectName": "Hyper Reality",
+    "year": 2016,
+    "link": "https://vimeo.com/166807261",
+    "tag": "ART"
+  },
+  {
+    "name": "Christoph Niemann",
+    "projectName": "The New Yorker",
+    "year": 2016,
+    "link": "https://www.youtube.com/watch?v=r5ziOSjXdo4",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Fox",
+    "projectName": "Sport NFL",
+    "year": 2016,
+    "link": "https://www.youtube.com/watch?v=sFblcUFbsCQ",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "Zack Lieberman",
+    "projectName": "ARKit",
+    "year": 2017,
+    "link": "https://www.wired.com/story/an-artist-uses-an-iphone-to-visualize-sounds-in-ar/",
+    "tag": "ART"
+  },
+  {
+    "name": "Peter Jackson",
+    "projectName": "AR",
+    "year": 2017,
+    "link": "https://www.youtube.com/watch?v=eDxzlwEriAw",
+    "tag": "EXAMPLES"
+  },
+  {
+    "name": "W Magazine",
+    "projectName": "Magazines AR",
+    "year": 2017,
+    "link": "https://www.youtube.com/watch?v=w-64KaymuD8",
+    "tag": "EXAMPLES"
+  }
+]}
