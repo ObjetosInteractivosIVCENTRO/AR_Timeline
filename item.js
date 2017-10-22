@@ -44,31 +44,32 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
   this.draw = function() {
 
 
+
+
     this.currentX = (this.x + this.deltaX) * this.sizeScale;
     this.currentY = (this.y + this.deltaY);
 
-    noStroke();
-    fill(this.fillColor);
-    //rect(this.x + this.deltaX, this.y+this.deltaY, this.w * this.sizeScale, this.h * this.sizeScale);
-    ellipse(this.currentX, this.currentY, this.w * this.sizeScale, this.h * this.sizeScale);
-    fill(255);
-    //ellipse(this.x + this.deltaX, this.y, this.w * this.sizeScale*0.9, this.h * this.sizeScale*0.9);
-    //fill(this.fillColor);
-    textAlign(CENTER, CENTER);
-    textSize(this.w * this.sizeScale / 4);
-    text(String(this.yr), this.currentX, this.currentY);
 
     if (this.isOver) {
       fill(this.fillColor);
+      ellipse(this.currentX, this.currentY, this.w * this.sizeScale * 1.3, this.h * this.sizeScale * 1.3);
+      fill(255);
+      ellipse(this.currentX, this.currentY, this.w * this.sizeScale * 1.1, this.h * this.sizeScale * 1.1);
+      fill(this.fillColor);
       rect(this.currentX - (this.w / 20 * this.sizeScale), this.currentY - this.w * this.sizeScale * 1.5, this.w / 10 * this.sizeScale, this.h * this.sizeScale);
       textSize(this.w * this.sizeScale / 3);
-      text(String(this.name), this.currentX, this.currentY - this.w * this.sizeScale * 2.5);
+      text(String(this.name), this.currentX, this.currentY - this.w * this.sizeScale * 2.3);
       textSize(this.w * this.sizeScale / 4);
       text(String(this.projectName), this.currentX, this.currentY - this.w * this.sizeScale * 2.0);
 
       textAlign(LEFT, LEFT);
       textSize(48);
-      text(String(this.tag), 20, windowHeight - 215);
+      var aString = this.tag;
+      text(aString, 20, windowHeight - 215);
+      stroke(this.fillColor);
+      //strokeWeight(1);  // Thicker
+      line(this.currentX, this.currentY + this.w * this.sizeScale * 0.3, 30 + textWidth(aString), windowHeight - 215);
+      noStroke();
       textSize(32);
       text(String(this.name), 20, windowHeight - 175);
       textSize(18);
@@ -76,6 +77,20 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
 
     }
+
+
+    noStroke();
+    fill(this.fillColor);
+    //rect(this.x + this.deltaX, this.y+this.deltaY, this.w * this.sizeScale, this.h * this.sizeScale);
+    ellipse(this.currentX, this.currentY, this.w * this.sizeScale, this.h * this.sizeScale);
+    fill(255);
+    //ellipse(this.x + this.deltaX, this.y, this.w * this.sizeScale*1.1, this.h * this.sizeScale*1.1);
+    //fill(this.fillColor);
+    textAlign(CENTER, CENTER);
+    textSize(this.w * this.sizeScale / 4);
+    text(String(this.yr), this.currentX, this.currentY);
+
+
 
 
 
@@ -122,7 +137,7 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
     var d = dist(mouseX, mouseY, this.currentX, this.currentY);
     if (d < this.w * this.sizeScale / 2) {
       this.isOver = true;
-      this.fillColor = color(255, 0, 200);
+      //this.fillColor = color(255, 0, 200);
     } else {
 
       this.isOver = false;
