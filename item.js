@@ -42,7 +42,9 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
   }
 
   this.draw = function() {
-    this.currentX = (this.x + this.deltaX)*this.sizeScale;
+
+
+    this.currentX = (this.x + this.deltaX) * this.sizeScale;
     this.currentY = (this.y + this.deltaY);
 
     noStroke();
@@ -58,11 +60,21 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
     if (this.isOver) {
       fill(this.fillColor);
-      rect(this.currentX, this.currentY - this.w * this.sizeScale, this.w / 10 * this.sizeScale, this.h * this.sizeScale);
+      rect(this.currentX - (this.w / 20 * this.sizeScale), this.currentY - this.w * this.sizeScale * 1.5, this.w / 10 * this.sizeScale, this.h * this.sizeScale);
       textSize(this.w * this.sizeScale / 3);
-      text(String(this.name), this.currentX, this.currentY - this.w * this.sizeScale);
-      textSize(this.w * this.sizeScale / 6);
-      text(String(this.projectName), this.currentX, this.currentY - this.w * this.sizeScale);
+      text(String(this.name), this.currentX, this.currentY - this.w * this.sizeScale * 2.5);
+      textSize(this.w * this.sizeScale / 4);
+      text(String(this.projectName), this.currentX, this.currentY - this.w * this.sizeScale * 2.0);
+
+      textAlign(LEFT, LEFT);
+      textSize(48);
+      text(String(this.tag), 20, windowHeight - 215);
+      textSize(32);
+      text(String(this.name), 20, windowHeight - 175);
+      textSize(18);
+      text(String(this.projectName), 20, windowHeight - 150);
+
+
     }
 
 
@@ -110,11 +122,24 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
     var d = dist(mouseX, mouseY, this.currentX, this.currentY);
     if (d < this.w * this.sizeScale / 2) {
       this.isOver = true;
-      //this.fillColor = color(255, 0, 200);
+      this.fillColor = color(255, 0, 200);
     } else {
 
       this.isOver = false;
-      //this.fillColor = color(0, 0, 0);
+      if (this.tag == "EXAMPLES") {
+        this.fillColor = color(0, 0, 0);
+        //fillColor = color(103,155,59);
+      } else if (this.tag == "SCIENCE") {
+        this.fillColor = color(103, 155, 59);
+      } else if (this.tag == "MOVIES") {
+        this.fillColor = color(134, 86, 250);
+      } else if (this.tag == "ART") {
+        this.fillColor = color(4, 141, 178);
+      } else if (this.tag == "EDUCATION") {
+        this.fillColor = color(209, 119, 252);
+      } else if (this.tag == "MEXICO") {
+        this.fillColor = color(215, 81, 23);
+      }
     }
 
 
