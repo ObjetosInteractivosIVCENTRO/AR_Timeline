@@ -23,6 +23,8 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
   this.textColor = color(255, 255, 255);
   this.isClicked = false;
   this.isOver = false;
+  this.isShowTag = false;
+  this.deltaTagY = 0;
 
   this.originalPosition = this.x;
 
@@ -45,9 +47,29 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
 
 
 
+    if (this.isShowTag) {
+
+      if (this.tag == "EXAMPLES") {
+        this.deltaTagY = this.w * this.sizeScale * 0.0;
+      } else if (this.tag == "SCIENCE") {
+        this.deltaTagY = -this.w * this.sizeScale * 2.0;
+      } else if (this.tag == "MOVIES") {
+        this.deltaTagY = -this.w * this.sizeScale * 4.0;
+      } else if (this.tag == "ART") {
+        this.deltaTagY = -this.w * this.sizeScale * 6.0;
+      } else if (this.tag == "EDUCATION") {
+        this.deltaTagY = -this.w * this.sizeScale * 8.0;
+      } else if (this.tag == "MEXICO") {
+        this.deltaTagY = -this.w * this.sizeScale * 10.0;
+      }
+    } else {
+      this.deltaTagY = 0;
+    }
+
+
 
     this.currentX = (this.x + this.deltaX) * this.sizeScale;
-    this.currentY = (this.y + this.deltaY);
+    this.currentY = (this.y + this.deltaY + this.deltaTagY);
 
 
     if (this.isOver) {

@@ -95,7 +95,7 @@ function initializeItems() {
   for (var i = 0; i < itemsJSON.data.length; i++) {
     //var positionX = map(int(itemsJSON.data[i].year), -400, 2020, 0, 2020 * 3);
 
-    items.push(new Item(200 * i, windowHeight/2, 100, 100, sizeScale, posX, posY,
+    items.push(new Item(200 * i, windowHeight / 2, 100, 100, sizeScale, posX, posY,
       itemsJSON.data[i].name,
       itemsJSON.data[i].projectName,
       itemsJSON.data[i].year,
@@ -123,7 +123,7 @@ function updateItems() {
   }
 
 
- // print("generalCanvasX: " + generalCanvasX);
+  // print("generalCanvasX: " + generalCanvasX);
 
   // print("positionCanvasX: " + positionCanvasX);
   //print("distanceFocus: " + distanceFocus);
@@ -242,6 +242,21 @@ function centerCanvasForScaleAndPosition(_scale, _position) {
     //print(items[i].name);
   }
 }
+
+function keyReleased() {
+  print("keyReleased");
+
+
+  for (var i = 0; i < items.length; i++) {
+    items[i].isShowTag = !items[i].isShowTag;
+    // print(items[i].name);
+  }
+
+
+
+  return false; // prevent any default behavior
+}
+
 
 
 function mousePressed() {
