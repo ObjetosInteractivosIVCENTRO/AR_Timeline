@@ -41,6 +41,9 @@ function Item(_x, _y, _w, _h, _sizeScale, _deltaX, _deltaY, _name, _projectName,
     this.fillColor = color(209, 119, 252);
   } else if (this.tag == "MEXICO") {
     this.fillColor = color(215, 81, 23);
+  }else{
+    
+  this.fillColor = color(255, 255, 255);
   }
 
   this.draw = function() {
